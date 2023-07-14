@@ -1,0 +1,90 @@
+.sHero{
+    .container{
+        height: 45.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .texts{
+            margin-top: 10rem;
+            text-align: center;
+            h1{
+                font-size: 6rem;
+                color: #090b17;
+                margin-bottom: 4rem;
+            }
+            p{
+                font-size: 2.3rem;
+                color: #676e8b;
+                margin-bottom: 5rem;
+                font-weight: 500;
+            }
+        }
+        .inputContent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input{
+                width: 100%;
+                max-width: 60rem;
+                background-color: #f4f6f8;
+                color: #676e8b;
+                border: none;
+                padding: 3rem 9rem 3rem 4rem;
+                font-size: 2rem;
+                margin-right: 2rem;
+                border-radius: 10px;
+                outline: none;
+                border: 3px solid transparent;
+                transition: all .4s;
+            }
+            input:focus{
+                border-color: #5340ff;
+            }
+        }
+    }
+    @include responsivo(700px){
+        .container{
+            .texts{
+                margin-top: 0;
+                h1{
+                    font-size: 4.5rem;
+                }
+                p{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    @include responsivo(600px){
+        .container{
+            .inputContent{
+                flex-direction: column;
+                input{
+                    padding: 3rem 3rem 3rem 2rem;
+                    font-size: 2rem;
+                    margin-right: 0;
+                    margin-bottom: 2rem;
+                }
+                a{
+                    width: 100%;
+                    max-width: 60rem;
+                }
+            }
+        }
+    }
+    @include responsivo(400px){
+        .container{
+            .texts{
+                h1{
+                    font-size: 4rem;
+                    margin-bottom: 2rem;
+                }
+                p{
+                    font-size: 1.7rem;
+                    margin-bottom: 4rem;
+                    line-height: 180%;
+                }
+            }
+        }
+    }
+}

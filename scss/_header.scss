@@ -1,0 +1,56 @@
+header{
+    background-color: #fff;
+    box-shadow: rgba(11, 7, 110, 0.04) 0px 5px 20px 0px;
+    .containerHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 170.4rem;
+        height: 9rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+        .logo{
+            width: 100%;
+            max-width: 11.9rem;
+        }
+        nav{
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 4rem;
+            }
+        }
+        .loginContent{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            .btnMenu{
+                padding: 2.2rem 2.8rem;
+                border-radius: 5px;
+            }
+            .btnMobile{
+                background: transparent;
+                display: none;
+            }
+        }
+    }
+    @include responsivo(1080px){
+        .containerHeader{
+            nav{
+                display: none;
+            }
+            .loginContent{
+                a{
+                    display: none;
+                }
+                .btnMobile{
+                    width: 100%;
+                    max-width: 4rem;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
