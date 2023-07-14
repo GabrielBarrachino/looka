@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+::-moz-selection {
+  background-color: #5340ff;
+  color: #fff;
+}
+::selection {
+  background-color: #5340ff;
+  color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -126,6 +135,9 @@ header .containerHeader .loginContent .btnMobile {
   }
 }
 
+.sHero {
+  padding-bottom: 8rem;
+}
 .sHero .container {
   height: 45.8rem;
   display: -webkit-box;
@@ -176,8 +188,8 @@ header .containerHeader .loginContent .btnMobile {
   border-radius: 10px;
   outline: none;
   border: 3px solid transparent;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 .sHero .container .inputContent input:focus {
   border-color: #5340ff;
@@ -220,5 +232,28 @@ header .containerHeader .loginContent .btnMobile {
     font-size: 1.7rem;
     margin-bottom: 4rem;
     line-height: 180%;
+  }
+}
+
+.sSlide .swiper .swiper-wrapper .swiper-slide {
+  margin-bottom: 6rem;
+}
+.sSlide .swiper .swiper-wrapper .swiper-slide img {
+  border-radius: 15px;
+}
+.sSlide .swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: #5340ff;
+}
+@media (max-width: 600px) {
+  .sSlide {
+    margin-top: -5rem;
+  }
+  .sSlide .swiper {
+    margin: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  .sSlide .swiper {
+    margin: 1rem;
   }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image" href="favicon.png">
     <title>Logo Design & Brand Identity for Entrepreneurs | Looka</title>
@@ -51,5 +52,36 @@
             </div>
         </div>
     </section>
+
+    <section class="sSlide">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/slideBirdLand.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slideMississppi.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/logoGlo.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        }
+        });
+    </script>
 </body>
 </html>

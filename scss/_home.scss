@@ -1,4 +1,5 @@
 .sHero{
+    padding-bottom: 8rem;
     .container{
         height: 45.8rem;
         display: flex;
@@ -35,7 +36,7 @@
                 border-radius: 10px;
                 outline: none;
                 border: 3px solid transparent;
-                transition: all .4s;
+                transition: all .6s;
             }
             input:focus{
                 border-color: #5340ff;
@@ -85,6 +86,36 @@
                     line-height: 180%;
                 }
             }
+        }
+    }
+}
+
+.sSlide{
+    .swiper{
+        .swiper-wrapper{
+            .swiper-slide{
+                margin-bottom: 6rem;
+                img{
+                    border-radius: 15px;
+                }
+            }
+        }
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                background-color: #5340ff;
+            }
+        }
+    }
+
+    @include responsivo(600px){
+        margin-top: -5rem;
+        .swiper{
+            margin: 3rem;
+        }
+    }
+    @include responsivo(400px){
+        .swiper{
+            margin: 1rem;
         }
     }
 }
