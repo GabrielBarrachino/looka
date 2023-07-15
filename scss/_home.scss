@@ -20,28 +20,6 @@
                 font-weight: 500;
             }
         }
-        .inputContent{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            input{
-                width: 100%;
-                max-width: 60rem;
-                background-color: #f4f6f8;
-                color: #676e8b;
-                border: none;
-                padding: 3rem 9rem 3rem 4rem;
-                font-size: 2rem;
-                margin-right: 2rem;
-                border-radius: 10px;
-                outline: none;
-                border: 3px solid transparent;
-                transition: all .6s;
-            }
-            input:focus{
-                border-color: #5340ff;
-            }
-        }
     }
     @include responsivo(700px){
         .container{
@@ -52,23 +30,6 @@
                 }
                 p{
                     font-size: 2rem;
-                }
-            }
-        }
-    }
-    @include responsivo(600px){
-        .container{
-            .inputContent{
-                flex-direction: column;
-                input{
-                    padding: 3rem 3rem 3rem 2rem;
-                    font-size: 2rem;
-                    margin-right: 0;
-                    margin-bottom: 2rem;
-                }
-                a{
-                    width: 100%;
-                    max-width: 60rem;
                 }
             }
         }
@@ -151,5 +112,123 @@
     }
     @include responsivo(660px){
         display: none;
+    }
+}
+
+.sBrandLogos{
+    margin-top: 15rem;
+    margin-bottom: 9rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .titleContent{
+            width: 100%;
+            max-width: 70rem;
+            margin-bottom: 8rem;
+            .title{
+                font-size: 5rem;
+                line-height: 140%;
+                text-align: center;
+                color: #090b17;
+            }
+        }
+        .containerLogos{
+            .contentLogos{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 6rem;
+                &:not(:last-child){
+                    margin-bottom: 8rem;
+                }
+                &.brandDois{
+                    display: none;
+                }
+                .contentImage{
+                    width: 100%;
+                }
+                .textContent{
+                    h3{
+                        color: #090b17;
+                        font-size: 3.5rem;
+                        margin-bottom: 2rem;
+                        span{
+                            color: #5340ff;
+                        }
+                    }
+                    p{
+                        width: 100%;
+                        max-width: 90rem;
+                        font-size: 1.9rem;
+                        line-height: 190%;
+                        color: #676e8b;
+                        font-weight: 500;
+                        margin-bottom: 5rem;
+                    }
+                    .btnBrand{
+                        padding: 2.2rem 2.8rem;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsivo(700px){
+        margin-top: 10rem;
+        .container{
+            .titleContent{
+                .title{
+                    font-size: 4rem;
+                }
+            }
+            .containerLogos{
+                .contentLogos{
+                    justify-content: center;
+                    flex-direction: column;
+                    &.brandUm{
+                        display: none;
+                    }
+                    &.brandDois{
+                        display: block;
+                    }
+                    .textContent{
+                        margin: 3rem;
+                        h3{
+                            font-size: 3rem;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(460px){
+        margin-top: 10rem;
+        .container{
+            .titleContent{
+                margin-bottom: 5rem;
+                .title{
+                    font-size: 2.5rem;
+                }
+            }
+            .containerLogos{
+                .contentLogos{
+                    .textContent{
+                        margin: 1rem;
+                        h3{
+                            font-size: 2.4rem;
+                        }
+                        p{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

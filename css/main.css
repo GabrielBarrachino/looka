@@ -69,10 +69,59 @@ button {
   color: #090b17;
 }
 
+.inputContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.inputContent input {
+  width: 100%;
+  max-width: 60rem;
+  background-color: #f4f6f8;
+  color: #676e8b;
+  border: none;
+  padding: 3rem 9rem 3rem 4rem;
+  font-size: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  outline: none;
+  border: 3px solid transparent;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.inputContent input:focus {
+  border-color: #5340ff;
+}
+@media (max-width: 600px) {
+  .inputContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .inputContent input {
+    padding: 3rem 3rem 3rem 2rem;
+    font-size: 2rem;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .inputContent a {
+    width: 100%;
+    max-width: 60rem;
+  }
+}
+
 header {
   background-color: #fff;
   -webkit-box-shadow: rgba(11, 7, 110, 0.04) 0px 5px 20px 0px;
   box-shadow: rgba(11, 7, 110, 0.04) 0px 5px 20px 0px;
+  z-index: 3;
 }
 header .containerHeader {
   display: -webkit-box;
@@ -165,35 +214,6 @@ header .containerHeader .loginContent .btnMobile {
   margin-bottom: 5rem;
   font-weight: 500;
 }
-.sHero .container .inputContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.sHero .container .inputContent input {
-  width: 100%;
-  max-width: 60rem;
-  background-color: #f4f6f8;
-  color: #676e8b;
-  border: none;
-  padding: 3rem 9rem 3rem 4rem;
-  font-size: 2rem;
-  margin-right: 2rem;
-  border-radius: 10px;
-  outline: none;
-  border: 3px solid transparent;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.sHero .container .inputContent input:focus {
-  border-color: #5340ff;
-}
 @media (max-width: 700px) {
   .sHero .container .texts {
     margin-top: 0;
@@ -203,24 +223,6 @@ header .containerHeader .loginContent .btnMobile {
   }
   .sHero .container .texts p {
     font-size: 2rem;
-  }
-}
-@media (max-width: 600px) {
-  .sHero .container .inputContent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .sHero .container .inputContent input {
-    padding: 3rem 3rem 3rem 2rem;
-    font-size: 2rem;
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-  .sHero .container .inputContent a {
-    width: 100%;
-    max-width: 60rem;
   }
 }
 @media (max-width: 400px) {
@@ -293,5 +295,130 @@ header .containerHeader .loginContent .btnMobile {
 @media (max-width: 660px) {
   .sAreaLogos {
     display: none;
+  }
+}
+
+.sBrandLogos {
+  margin-top: 15rem;
+  margin-bottom: 9rem;
+}
+.sBrandLogos .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.sBrandLogos .container .titleContent {
+  width: 100%;
+  max-width: 70rem;
+  margin-bottom: 8rem;
+}
+.sBrandLogos .container .titleContent .title {
+  font-size: 5rem;
+  line-height: 140%;
+  text-align: center;
+  color: #090b17;
+}
+.sBrandLogos .container .containerLogos .contentLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.sBrandLogos .container .containerLogos .contentLogos:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.sBrandLogos .container .containerLogos .contentLogos.brandDois {
+  display: none;
+}
+.sBrandLogos .container .containerLogos .contentLogos .contentImage {
+  width: 100%;
+}
+.sBrandLogos .container .containerLogos .contentLogos .textContent h3 {
+  color: #090b17;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.sBrandLogos .container .containerLogos .contentLogos .textContent h3 span {
+  color: #5340ff;
+}
+.sBrandLogos .container .containerLogos .contentLogos .textContent p {
+  width: 100%;
+  max-width: 90rem;
+  font-size: 1.9rem;
+  line-height: 190%;
+  color: #676e8b;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+.sBrandLogos .container .containerLogos .contentLogos .textContent .btnBrand {
+  padding: 2.2rem 2.8rem;
+  border-radius: 6px;
+}
+@media (max-width: 700px) {
+  .sBrandLogos {
+    margin-top: 10rem;
+  }
+  .sBrandLogos .container .titleContent .title {
+    font-size: 4rem;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos.brandUm {
+    display: none;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos.brandDois {
+    display: block;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos .textContent {
+    margin: 3rem;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos .textContent h3 {
+    font-size: 3rem;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos .textContent p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 460px) {
+  .sBrandLogos {
+    margin-top: 10rem;
+  }
+  .sBrandLogos .container .titleContent {
+    margin-bottom: 5rem;
+  }
+  .sBrandLogos .container .titleContent .title {
+    font-size: 2.5rem;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos .textContent {
+    margin: 1rem;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos .textContent h3 {
+    font-size: 2.4rem;
+  }
+  .sBrandLogos .container .containerLogos .contentLogos .textContent p {
+    font-size: 1.4rem;
   }
 }

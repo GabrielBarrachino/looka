@@ -1,6 +1,9 @@
 header{
+    // width: 100%;
+    // position: fixed;
     background-color: #fff;
     box-shadow: rgba(11, 7, 110, 0.04) 0px 5px 20px 0px;
+    z-index: 3;
     .containerHeader{
         display: flex;
         align-items: center;

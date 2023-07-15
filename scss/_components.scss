@@ -21,3 +21,40 @@
     font-size: 1.7rem;
     color: #090b17;
 }
+
+
+.inputContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+        width: 100%;
+        max-width: 60rem;
+        background-color: #f4f6f8;
+        color: #676e8b;
+        border: none;
+        padding: 3rem 9rem 3rem 4rem;
+        font-size: 2rem;
+        margin-right: 2rem;
+        border-radius: 10px;
+        outline: none;
+        border: 3px solid transparent;
+        transition: all .6s;
+    }
+    input:focus{
+        border-color: #5340ff;
+    }
+    @include responsivo(600px){
+        flex-direction: column;
+        input{
+            padding: 3rem 3rem 3rem 2rem;
+            font-size: 2rem;
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+        a{
+            width: 100%;
+            max-width: 60rem;
+        }
+    }
+}
