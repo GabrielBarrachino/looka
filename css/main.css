@@ -116,6 +116,40 @@ button {
     max-width: 60rem;
   }
 }
+@media (max-width: 460px) {
+  .inputContent input {
+    padding: 2.4rem 2.4rem 2.4rem 2rem;
+    font-size: 1.7rem;
+  }
+}
+
+.titleContent {
+  width: 100%;
+  max-width: 70rem;
+  margin-bottom: 8rem;
+}
+.titleContent .title {
+  font-size: 5rem;
+  line-height: 140%;
+  text-align: center;
+  color: #090b17;
+}
+@media (max-width: 700px) {
+  .titleContent {
+    margin-top: 1rem;
+  }
+  .titleContent .title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 460px) {
+  .titleContent {
+    margin-bottom: 5rem;
+  }
+  .titleContent .title {
+    font-size: 2.5rem;
+  }
+}
 
 header {
   background-color: #fff;
@@ -317,17 +351,6 @@ header .containerHeader .loginContent .btnMobile {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.sBrandLogos .container .titleContent {
-  width: 100%;
-  max-width: 70rem;
-  margin-bottom: 8rem;
-}
-.sBrandLogos .container .titleContent .title {
-  font-size: 5rem;
-  line-height: 140%;
-  text-align: center;
-  color: #090b17;
-}
 .sBrandLogos .container .containerLogos .contentLogos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,9 +397,6 @@ header .containerHeader .loginContent .btnMobile {
   .sBrandLogos {
     margin-top: 10rem;
   }
-  .sBrandLogos .container .titleContent .title {
-    font-size: 4rem;
-  }
   .sBrandLogos .container .containerLogos .contentLogos {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -406,12 +426,6 @@ header .containerHeader .loginContent .btnMobile {
   .sBrandLogos {
     margin-top: 10rem;
   }
-  .sBrandLogos .container .titleContent {
-    margin-bottom: 5rem;
-  }
-  .sBrandLogos .container .titleContent .title {
-    font-size: 2.5rem;
-  }
   .sBrandLogos .container .containerLogos .contentLogos .textContent {
     margin: 1rem;
   }
@@ -420,5 +434,127 @@ header .containerHeader .loginContent .btnMobile {
   }
   .sBrandLogos .container .containerLogos .contentLogos .textContent p {
     font-size: 1.4rem;
+  }
+}
+
+.sMakeLogo {
+  background-color: #f4f6f8;
+  margin-bottom: 4rem;
+}
+.sMakeLogo .container {
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3rem;
+}
+.sMakeLogo .container .titleContent {
+  margin-bottom: 0;
+}
+.sMakeLogo .container .inputContent {
+  width: 100%;
+}
+.sMakeLogo .container .inputContent input {
+  background-color: #fff;
+}
+
+.sAllServices {
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+}
+.sAllServices .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.sAllServices .container .titleContent {
+  max-width: 80rem;
+}
+.sAllServices .container .titleContent .textContent {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 180%;
+  color: #676e8b;
+  text-align: center;
+}
+.sAllServices .container .AllService {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  grid-gap: 8rem;
+  margin-top: 5rem;
+}
+.sAllServices .container .AllService .contentService .image {
+  margin-bottom: 5rem;
+}
+.sAllServices .container .AllService .contentService .image img {
+  width: 100%;
+  max-width: 10rem;
+}
+.sAllServices .container .AllService .contentService .texts h5 {
+  font-size: 1.9rem;
+  color: #090b17;
+}
+.sAllServices .container .AllService .contentService .texts p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.sAllServices .container .AllService .contentService .texts p img {
+  width: 100%;
+  max-width: 3rem;
+  margin-right: 1rem;
+}
+.sAllServices .container .AllService .contentService .texts p span {
+  line-height: 160%;
+  color: #676e8b;
+  font-size: 1.7rem;
+}
+.sAllServices .container .AllService .contentService .texts p span a {
+  color: #5340ff;
+}
+@media (max-width: 1000px) {
+  .sAllServices .container .AllService {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 660px) {
+  .sAllServices .container .AllService {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+  }
+  .sAllServices .container .AllService .contentService .image {
+    margin-bottom: 2rem;
+  }
+  .sAllServices .container .AllService .contentService .image img {
+    width: 100%;
+    max-width: 8rem;
   }
 }

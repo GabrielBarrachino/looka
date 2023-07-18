@@ -123,17 +123,6 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        .titleContent{
-            width: 100%;
-            max-width: 70rem;
-            margin-bottom: 8rem;
-            .title{
-                font-size: 5rem;
-                line-height: 140%;
-                text-align: center;
-                color: #090b17;
-            }
-        }
         .containerLogos{
             .contentLogos{
                 display: flex;
@@ -179,11 +168,6 @@
     @include responsivo(700px){
         margin-top: 10rem;
         .container{
-            .titleContent{
-                .title{
-                    font-size: 4rem;
-                }
-            }
             .containerLogos{
                 .contentLogos{
                     justify-content: center;
@@ -210,12 +194,6 @@
     @include responsivo(460px){
         margin-top: 10rem;
         .container{
-            .titleContent{
-                margin-bottom: 5rem;
-                .title{
-                    font-size: 2.5rem;
-                }
-            }
             .containerLogos{
                 .contentLogos{
                     .textContent{
@@ -225,6 +203,113 @@
                         }
                         p{
                             font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sMakeLogo{
+    background-color: #f4f6f8;
+    margin-bottom: 4rem;
+    .container{
+        height: 40rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+        .titleContent{
+            margin-bottom: 0;
+        }
+        .inputContent{
+            width: 100%;
+            input{
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.sAllServices{
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .titleContent{
+            max-width: 80rem;
+            .textContent{
+                margin-top: 2rem;
+                font-size: 1.7rem;
+                font-weight: 500;
+                line-height: 180%;
+                color: #676e8b;
+                text-align: center;
+            }
+        }
+        .AllService{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: flex-start;
+            grid-gap: 8rem;
+            margin-top: 5rem;
+            .contentService{
+                .image{
+                    margin-bottom: 5rem;
+                    img{
+                        width: 100%;
+                        max-width: 10rem;
+                    }
+                }
+                .texts{
+                    h5{
+                        font-size: 1.9rem;
+                        color: #090b17;
+                    }
+                    p{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 2rem;
+                        img{
+                            width: 100%;
+                            max-width: 3rem;
+                            margin-right: 1rem;
+                        }
+                        span{
+                            line-height: 160%;
+                            color: #676e8b;
+                            font-size: 1.7rem;
+                            a{
+                                color: #5340ff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(1000px){
+        .container{
+            .AllService{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    @include responsivo(660px){
+        .container{
+            .AllService{
+                grid-template-columns: repeat(1, 1fr);
+                margin-top: 2rem;.contentService{
+                    .image{
+                        margin-bottom: 2rem;
+                        img{
+                            width: 100%;
+                            max-width: 8rem;
                         }
                     }
                 }
