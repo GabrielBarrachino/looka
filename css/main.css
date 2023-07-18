@@ -128,6 +128,9 @@ button {
   max-width: 70rem;
   margin-bottom: 8rem;
 }
+.titleContent.contentCreative {
+  max-width: 800rem;
+}
 .titleContent .title {
   font-size: 5rem;
   line-height: 140%;
@@ -556,5 +559,232 @@ header .containerHeader .loginContent .btnMobile {
   .sAllServices .container .AllService .contentService .image img {
     width: 100%;
     max-width: 8rem;
+  }
+}
+
+.sVideo {
+  margin-top: 9rem;
+  margin-bottom: 18rem;
+}
+.sVideo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.sVideo .container .titleContent {
+  max-width: 80rem;
+  margin-bottom: 5rem;
+}
+.sVideo .container .containerVideo {
+  width: 100%;
+}
+.sVideo .container .containerVideo video {
+  width: 100%;
+}
+
+.sBrandsDesigns {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+.sBrandsDesigns .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.sBrandsDesigns .container .titleContent {
+  max-width: 80rem;
+}
+.sBrandsDesigns .container .allBrands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 5rem;
+}
+.sBrandsDesigns .container .allBrands .brandContent.spaceBox .texts {
+  margin-bottom: 5rem;
+}
+.sBrandsDesigns .container .allBrands .brandContent.vivox {
+  margin-top: -15rem;
+}
+.sBrandsDesigns .container .allBrands .brandContent.gravity {
+  margin-top: -27rem;
+}
+.sBrandsDesigns .container .allBrands .brandContent .image img {
+  width: 100%;
+  max-width: 80rem;
+  margin-bottom: 3rem;
+}
+.sBrandsDesigns .container .allBrands .brandContent .texts h3 {
+  color: #090b17;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.sBrandsDesigns .container .allBrands .brandContent .texts p {
+  color: #676e8b;
+  font-size: 1.9rem;
+}
+@media (max-width: 1020px) {
+  .sBrandsDesigns .container .allBrands {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 6rem;
+  }
+  .sBrandsDesigns .container .allBrands .brandContent.spaceBox .texts {
+    margin-bottom: 0;
+  }
+  .sBrandsDesigns .container .allBrands .brandContent.vivox {
+    margin-top: 0;
+  }
+  .sBrandsDesigns .container .allBrands .brandContent.gravity {
+    margin-top: 0;
+  }
+  .sBrandsDesigns .container .allBrands .brandContent .texts {
+    text-align: center;
+  }
+}
+
+.sTeam {
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+}
+.sTeam .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4rem;
+}
+.sTeam .container .titleContent {
+  max-width: 80rem;
+}
+.sTeam .container .titleContent .title {
+  margin-bottom: 1.8rem;
+}
+.sTeam .container .titleContent p {
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: #676e8b;
+  font-weight: 400;
+}
+.sTeam .container .titleContent p a {
+  color: #5340ff;
+}
+.sTeam .container .btnGlobal {
+  margin-top: 3rem;
+  background-color: transparent;
+  color: #5340ff;
+  border: 2px solid #5340ff;
+  padding: 2.2rem 2.2rem;
+  border-radius: 6px;
+}
+.sTeam .container .btnGlobal:hover {
+  background-color: #5340ff;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .sTeam {
+    margin-top: 10rem;
+  }
+}
+
+.sLearn {
+  margin-top: 15rem;
+  margin-bottom: 20rem;
+}
+.sLearn .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.sLearn .container .titleContent {
+  max-width: 110rem;
+}
+.sLearn .container .allLearns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 9rem 6rem;
+}
+.sLearn .container .allLearns .cardLearn {
+  width: 100%;
+  max-width: 50rem;
+}
+.sLearn .container .allLearns .cardLearn .image {
+  margin-bottom: 3rem;
+}
+.sLearn .container .allLearns .cardLearn .image img {
+  height: 100%;
+  width: 100%;
+  height: 25rem;
+  border-radius: 10px;
+}
+.sLearn .container .allLearns .cardLearn .texts a {
+  display: block;
+}
+.sLearn .container .allLearns .cardLearn .texts a.linkTop {
+  font-size: 1.6rem;
+  color: #5340ff;
+  margin-bottom: 2rem;
+}
+.sLearn .container .allLearns .cardLearn .texts a.linkBottom {
+  font-size: 2.6rem;
+  line-height: 150%;
+  color: #090b17;
+  font-weight: 700;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.sLearn .container .allLearns .cardLearn .texts a.linkBottom:hover {
+  text-decoration: underline;
+}
+@media (max-width: 980px) {
+  .sLearn .container .allLearns {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 9rem 4rem;
+  }
+}
+@media (max-width: 700px) {
+  .sLearn .container .allLearns {
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 9rem 4rem;
   }
 }

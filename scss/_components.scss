@@ -70,6 +70,9 @@
     width: 100%;
     max-width: 70rem;
     margin-bottom: 8rem;
+    &.contentCreative{
+        max-width: 800rem;
+    }
     .title{
         font-size: 5rem;
         line-height: 140%;

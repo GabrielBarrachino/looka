@@ -317,3 +317,212 @@
         }
     }
 }
+
+.sVideo{
+    margin-top: 9rem;
+    margin-bottom: 18rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .titleContent{
+            max-width: 80rem;
+            margin-bottom: 5rem;
+        }
+        .containerVideo{
+            width: 100%;
+            video{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.sBrandsDesigns{
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .titleContent{
+            max-width: 80rem;
+        }
+        .allBrands{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0 5rem;
+            .brandContent{
+                &.spaceBox{
+                    .texts{
+                        margin-bottom: 5rem;
+                    }
+                }
+                &.vivox{
+                    margin-top: -15rem;
+                }
+                &.gravity{
+                    margin-top: -27rem;
+                }
+                .image{
+                    img{
+                        width: 100%;
+                        max-width: 80rem;
+                        margin-bottom: 3rem;
+                    }
+                }
+                .texts{
+                    h3{
+                        color: #090b17;
+                        font-size: 2.5rem;
+                        margin-bottom: 1rem;
+                    }
+                    p{
+                        color: #676e8b;
+                        font-size: 1.9rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(1020px){
+        .container{
+            .allBrands{
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 6rem;
+                .brandContent{
+                    &.spaceBox{
+                        .texts{
+                            margin-bottom: 0;
+                        }
+                    }
+                    &.vivox{
+                        margin-top: 0;
+                    }
+                    &.gravity{
+                        margin-top: 0;
+                    }
+                    .texts{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sTeam{
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4rem;
+        .titleContent{
+            max-width: 80rem;
+            .title{
+                margin-bottom: 1.8rem;
+            }
+            p{
+                text-align: center;
+                width: 100%;
+                font-size: 1.8rem;
+                line-height: 160%;
+                color: #676e8b;
+                font-weight: 400;
+                a{
+                    color: #5340ff;
+                }
+            }
+        }
+        .btnGlobal{
+            margin-top: 3rem;
+            background-color: transparent;
+            color: #5340ff;
+            border: 2px solid #5340ff;
+            padding: 2.2rem 2.2rem;
+            border-radius: 6px;
+            &:hover{
+                background-color: #5340ff;
+                color: #fff;
+            }
+        }
+    }
+
+    @include responsivo(600px){
+        margin-top: 10rem;
+    }
+}
+
+.sLearn{
+    margin-top: 15rem;
+    margin-bottom: 20rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .titleContent{
+            max-width: 110rem;
+        }
+        .allLearns{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 9rem 6rem;
+            .cardLearn{
+                width: 100%;
+                max-width: 50rem;
+                .image{
+                    margin-bottom: 3rem;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        height: 25rem;
+                        border-radius: 10px;
+                    }
+                }
+                .texts{
+                    a{
+                        display: block;
+                        &.linkTop{
+                            font-size: 1.6rem;
+                            color: #5340ff;
+                            margin-bottom: 2rem;
+                        }
+                        &.linkBottom{
+                            font-size: 2.6rem;
+                            line-height: 150%;
+                            color: #090b17;
+                            font-weight: 700;
+                            transition: all .4s;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsivo(980px){
+        .container{
+            .allLearns{
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 9rem 4rem;
+            }
+        }        
+    }
+    @include responsivo(700px){
+        .container{
+            .allLearns{
+                place-items: center;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 9rem 4rem;
+            }
+        }        
+    }
+}
