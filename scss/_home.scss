@@ -316,6 +316,9 @@
             }
         }
     }
+    @include responsivo(460px){
+        margin-top: 8rem;
+    }
 }
 
 .sVideo{
@@ -336,6 +339,9 @@
                 width: 100%;
             }
         }
+    }
+    @include responsivo(460px){
+        margin-bottom: 8rem;
     }
 }
 
@@ -410,6 +416,9 @@
                 }
             }
         }
+    }
+    @include responsivo(460px){
+        margin-top: 8rem;
     }
 }
 
@@ -524,5 +533,180 @@
                 grid-gap: 9rem 4rem;
             }
         }        
+    }
+    @include responsivo(460px){
+        margin-bottom: 10rem;
+    }
+}
+
+.sGetStarted{
+    margin-bottom: 7rem;
+    background-color: #5340ff;
+    .container{
+        height: 36rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .texts{
+            h3{
+                color: #fff;
+                font-size: 5rem;
+                margin-bottom: 3rem;
+            }
+            p{
+                color: #ffffffc2;
+                font-size: 2rem;
+                width: 100%;
+                max-width: 50rem;
+                line-height: 140%;
+            }
+        }
+        .inputContent{
+            max-width: 80rem;
+            width: 100%;
+            input:focus{
+                border-color: #090b17;
+            }
+            .btnGlobal{
+                background-color: #090b17;
+            }
+        }
+    }
+    @include responsivo(800px){
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+    @include responsivo(600px){
+        .container{
+            height: 45rem;
+        }
+    }
+    @include responsivo(460px){
+        .container{
+            .texts{
+                h3{
+                    font-size: 3.5rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    margin-top: 12rem;
+    margin-bottom: 7rem;
+    .container{
+        max-width: 154rem;
+        .allLinks{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin-bottom: 7rem;
+            .contentLinks{
+                h5{
+                    color: #090b17;
+                    font-size: 2.2rem;
+                    margin-bottom: 3rem;
+                }
+                nav{
+                    ul{
+                        li{
+                            &:not(:last-child){
+                                margin-bottom: 2.5rem;
+                            }
+                            a{
+                                color: #676e8b;
+                                font-size: 1.7rem;
+                                line-height: 160%;
+                                transition: all .4s;
+                                &:hover{
+                                    color: #5340ff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .socialMedia{
+                a{
+                    &:not(:last-child){
+                        margin-right: 2rem;
+                    }
+                    i{
+                        font-size: 4rem;
+                        transition: all .6s;
+                        &:hover{
+                            color: #090b17 !important;
+                        }
+                    }
+                }
+            }
+        }
+        .copyRight{
+            display: flex;
+            align-items: center;
+            h6{
+                color: #676e8b;
+                font-size: 1.7rem;
+                font-weight: 400;
+                margin-right: .4rem;
+            }
+            .links{
+                a{
+                    color: #676e8b;
+                    font-size: 1.7rem;
+                    margin-right: .4rem;
+                    &:hover{
+                        color: #5340ff;
+                    }
+                }
+            }        
+        }
+    }
+    @include responsivo(900px){
+        .container{
+            margin: 2rem;
+            .allLinks{
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 8rem 0;
+            }
+        }
+    }
+    @include responsivo(460px){
+        .container{
+            .allLinks{
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 4rem 0;
+                .contentLinks{
+                    h5{
+                        font-size: 1.8rem;
+                    }
+                    nav{
+                        ul{
+                            li{
+                                a{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .socialMedia{
+                    a{
+                        i{
+                            font-size: 2.8rem;
+                        }
+                    }
+                }
+            }
+            .copyRight{
+                flex-direction: column;   
+            }
+        }
     }
 }

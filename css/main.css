@@ -26,6 +26,7 @@ img {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -561,6 +562,11 @@ header .containerHeader .loginContent .btnMobile {
     max-width: 8rem;
   }
 }
+@media (max-width: 460px) {
+  .sAllServices {
+    margin-top: 8rem;
+  }
+}
 
 .sVideo {
   margin-top: 9rem;
@@ -590,6 +596,11 @@ header .containerHeader .loginContent .btnMobile {
 }
 .sVideo .container .containerVideo video {
   width: 100%;
+}
+@media (max-width: 460px) {
+  .sVideo {
+    margin-bottom: 8rem;
+  }
 }
 
 .sBrandsDesigns {
@@ -658,6 +669,11 @@ header .containerHeader .loginContent .btnMobile {
   }
   .sBrandsDesigns .container .allBrands .brandContent .texts {
     text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .sBrandsDesigns {
+    margin-top: 8rem;
   }
 }
 
@@ -786,5 +802,168 @@ header .containerHeader .loginContent .btnMobile {
     place-items: center;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 9rem 4rem;
+  }
+}
+@media (max-width: 460px) {
+  .sLearn {
+    margin-bottom: 10rem;
+  }
+}
+
+.sGetStarted {
+  margin-bottom: 7rem;
+  background-color: #5340ff;
+}
+.sGetStarted .container {
+  height: 36rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.sGetStarted .container .texts h3 {
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.sGetStarted .container .texts p {
+  color: #ffffffc2;
+  font-size: 2rem;
+  width: 100%;
+  max-width: 50rem;
+  line-height: 140%;
+}
+.sGetStarted .container .inputContent {
+  max-width: 80rem;
+  width: 100%;
+}
+.sGetStarted .container .inputContent input:focus {
+  border-color: #090b17;
+}
+.sGetStarted .container .inputContent .btnGlobal {
+  background-color: #090b17;
+}
+@media (max-width: 800px) {
+  .sGetStarted .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .sGetStarted .container {
+    height: 45rem;
+  }
+}
+@media (max-width: 460px) {
+  .sGetStarted .container .texts h3 {
+    font-size: 3.5rem;
+  }
+  .sGetStarted .container .texts p {
+    font-size: 1.8rem;
+  }
+}
+
+footer {
+  margin-top: 12rem;
+  margin-bottom: 7rem;
+}
+footer .container {
+  max-width: 154rem;
+}
+footer .container .allLinks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 7rem;
+}
+footer .container .allLinks .contentLinks h5 {
+  color: #090b17;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+footer .container .allLinks .contentLinks nav ul li:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+footer .container .allLinks .contentLinks nav ul li a {
+  color: #676e8b;
+  font-size: 1.7rem;
+  line-height: 160%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+footer .container .allLinks .contentLinks nav ul li a:hover {
+  color: #5340ff;
+}
+footer .container .allLinks .socialMedia a:not(:last-child) {
+  margin-right: 2rem;
+}
+footer .container .allLinks .socialMedia a i {
+  font-size: 4rem;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+footer .container .allLinks .socialMedia a i:hover {
+  color: #090b17 !important;
+}
+footer .container .copyRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer .container .copyRight h6 {
+  color: #676e8b;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-right: 0.4rem;
+}
+footer .container .copyRight .links a {
+  color: #676e8b;
+  font-size: 1.7rem;
+  margin-right: 0.4rem;
+}
+footer .container .copyRight .links a:hover {
+  color: #5340ff;
+}
+@media (max-width: 900px) {
+  footer .container {
+    margin: 2rem;
+  }
+  footer .container .allLinks {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8rem 0;
+  }
+}
+@media (max-width: 460px) {
+  footer .container .allLinks {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem 0;
+  }
+  footer .container .allLinks .contentLinks h5 {
+    font-size: 1.8rem;
+  }
+  footer .container .allLinks .contentLinks nav ul li a {
+    font-size: 1.5rem;
+  }
+  footer .container .allLinks .socialMedia a i {
+    font-size: 2.8rem;
+  }
+  footer .container .copyRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
