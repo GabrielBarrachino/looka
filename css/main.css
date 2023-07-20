@@ -156,6 +156,8 @@ button {
 }
 
 header {
+  width: 100%;
+  position: fixed;
   background-color: #fff;
   -webkit-box-shadow: rgba(11, 7, 110, 0.04) 0px 5px 20px 0px;
   box-shadow: rgba(11, 7, 110, 0.04) 0px 5px 20px 0px;
@@ -222,6 +224,97 @@ header .containerHeader .loginContent .btnMobile {
   }
 }
 
+.menuMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2022;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.menuMobile aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.menuMobile aside .topo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.menuMobile aside .topo img {
+  width: 100%;
+  max-width: 10rem;
+}
+.menuMobile aside .topo .close {
+  background: transparent;
+  font-size: 4rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.menuMobile aside ul {
+  margin-bottom: 2.4rem;
+}
+.menuMobile aside ul li .linkMenu {
+  padding: 1.5rem 0;
+  display: block;
+  font-size: 2rem;
+  color: #090b17;
+}
+.menuMobile aside .loginContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3rem;
+}
+.menuMobile aside .loginContent .btnGlobal {
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.menuOpened {
+  overflow: hidden;
+}
+.menuOpened .menuMobile {
+  opacity: 1;
+  pointer-events: all;
+}
+.menuOpened .menuMobile aside {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
 .sHero {
   padding-bottom: 8rem;
 }
@@ -253,6 +346,9 @@ header .containerHeader .loginContent .btnMobile {
   font-weight: 500;
 }
 @media (max-width: 700px) {
+  .sHero {
+    padding-top: 8rem;
+  }
   .sHero .container .texts {
     margin-top: 0;
   }
@@ -272,6 +368,11 @@ header .containerHeader .loginContent .btnMobile {
     font-size: 1.7rem;
     margin-bottom: 4rem;
     line-height: 180%;
+  }
+}
+@media (max-width: 340px) {
+  .sHero {
+    padding-top: 11rem;
   }
 }
 
@@ -976,11 +1077,12 @@ footer .container .copyRight .links a:hover {
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
 }
-.showModal .modalSign {
+
+.showModalSign .modalSign {
   opacity: 1;
   pointer-events: all;
 }
-.showModal .modalSign .modalContent {
+.showModalSign .modalSign .modalContent {
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
 }
@@ -1012,7 +1114,7 @@ footer .container .copyRight .links a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 .modalLogin .modalContent {
@@ -1204,6 +1306,18 @@ footer .container .copyRight .links a:hover {
 .modalLogin .modalContent .bottomContent .password .passwordDois {
   color: #090b17;
 }
+@media (max-width: 420px) {
+  .modalLogin .modalContent {
+    max-width: 37rem;
+    padding: 0.5rem;
+  }
+  .modalLogin .modalContent .topContent .text h3 {
+    font-size: 2.5rem;
+  }
+  .modalLogin .modalContent .topContent .text p {
+    font-size: 1.5rem;
+  }
+}
 
 .modalSign {
   position: fixed;
@@ -1226,13 +1340,13 @@ footer .container .copyRight .links a:hover {
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
-.modalSign .overlay {
+.modalSign .overlaySign {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 .modalSign .modalContent {
@@ -1426,10 +1540,32 @@ footer .container .copyRight .links a:hover {
   flex-direction: column;
   gap: 2rem;
   font-size: 1.6rem;
+  color: #676e8b;
 }
-.modalSign .modalContent .bottomContent .password .passwordUm {
+.modalSign .modalContent .bottomContent .password a {
   color: #5340ff;
 }
-.modalSign .modalContent .bottomContent .password .passwordDois {
-  color: #090b17;
+@media (max-width: 620px) {
+  .modalSign .modalContent {
+    max-width: 45rem;
+    padding: 2rem;
+  }
+  .modalSign .modalContent .topContent .orContent span::before {
+    width: 40%;
+  }
+  .modalSign .modalContent .topContent .orContent span::after {
+    width: 40%;
+  }
+}
+@media (max-width: 420px) {
+  .modalSign .modalContent {
+    max-width: 37rem;
+    padding: 0.5rem;
+  }
+  .modalSign .modalContent .topContent .text h3 {
+    font-size: 2.5rem;
+  }
+  .modalSign .modalContent .topContent .text p {
+    font-size: 1.5rem;
+  }
 }

@@ -28,14 +28,37 @@
                 </ul>
             </nav>
             <div class="loginContent">
-                <a href="#" class="jsOpenModal linkMenu">Login</a>
-                <a href="#" class="jsOpenModalSign btnGlobal btnMenu">Sign up</a>
-                <button class="btnMobile">
+                <a href="#" class="linkMenu" id="jsOpenModal">Log in</a>
+                <a href="#" class="btnGlobal btnMenu" id="jsOpenModalSign">Sign up</a>
+                <button class="btnMobile" id="abirMobile">
                     <img src="./img/menu.png" alt="">
                 </button>
             </div>
         </div>
     </header>
+
+    <div class="menuMobile">
+        <aside>
+            <div class="topo">
+                <img src="./img/logoLooka.svg" alt="Logo Looka">
+                <button class="close" id="fecharMobile">
+                    <i class='bx bx-x' undefined ></i>
+                </button>
+            </div>
+            <ul>
+                <li><a href="https://looka.com/logo-maker/" target="_blank" class="linkMenu">Logo Maker</a></li>
+                <li><a href="https://looka.com/brand-kit/" target="_blank" class="linkMenu">Brand Kit</a></li>
+                <li><a href="https://looka.com/logo-maker/how-it-works/" target="_blank" class="linkMenu">How It Works</a></li>
+                <li><a href="https://looka.com/logo-maker/reviews/" target="_blank" class="linkMenu">Reviews</a></li>
+                <li><a href="https://looka.com/logo-ideas/" target="_blank" class="linkMenu">Logo Ideas</a></li>
+                <li><a href="https://looka.com/blog/" target="_blank" class="linkMenu">Blog</a></li>
+            </ul>
+            <div class="loginContent">
+                <a href="#" class="btnGlobal btnMenu" id="jsOpenModalSignMobile">Sign up</a>
+                <a href="#" class="linkMenu" id="jsOpenModalMobile">Log in</a>
+            </div>
+        </aside>
+    </div>
     
     <section class="sHero">
         <div class="container">
@@ -542,10 +565,10 @@
         </div>
     </footer>
 
-    <!-- <section class="modalLogin">
-        <div class="overlay jsOverlay"></div>
+    <section class="modalLogin">
+        <div class="overlay" id="jsOverlay"></div>
         <div class="modalContent">
-            <button class="close jsClose">
+            <button class="close" id="jsClose">
                 <i class='bx bx-x' undefined ></i>
             </button>
             <div class="topContent">
@@ -586,9 +609,9 @@
     </section>
 
     <section class="modalSign">
-        <div class="overlay jsOverlaySign"></div>
+        <div class="overlaySign" id="jsOverlaySign"></div>
         <div class="modalContent">
-            <button class="close jsCloseSign">
+            <button class="close" id="jsCloseSign">
                 <i class='bx bx-x' undefined ></i>
             </button>
             <div class="topContent">
@@ -623,12 +646,11 @@
                 <input type="password" placeholder="Password" required>
                 <button type="submit" >Sign up</button>
                 <div class="password">
-                    <a href="#" target="_blank" class="passwordUm">Forgot password?</a>
-                    <a href="#" target="_blank" class="passwordDois">Don't have an account yet? Sign up</a>
+                    <span>By signing up, you agree to our <a href="#" target="_blank">terms of service</a></span>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

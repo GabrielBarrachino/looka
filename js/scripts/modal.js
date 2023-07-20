@@ -1,41 +1,62 @@
-const openModal = document.querySelector('.jsOpenModal');
-const openModalSign = document.querySelector('.jsOpenModalSign');
-const closeModal = document.querySelector('.jsClose');
-const closeModalSign = document.querySelector('.jsCloseSign');
-const closeOverlayModal = document.querySelector('.jsOverlay');
-const closeOverlayModalSign = document.querySelector('.jsOverlaySign');
+const openModal = document.getElementById('jsOpenModal');
+const closeModal = document.getElementById('jsClose');
+const closeOverlayModal = document.getElementById('jsOverlay');
 
-//Open
+//Modal Login
 openModal.addEventListener('click', (event) => {
     event.preventDefault();
     let html = document.documentElement;
     html.classList.add('showModal');
 })
 
-openModalSign.addEventListener('click', (event) => {
-    event.preventDefault();
-    let html = document.documentElement;
-    html.classList.add('showModal');
-})
-
-//Close
 closeModal.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.remove('showModal');
 });
 
-closeModalSign.addEventListener('click', () => {
-    let html = document.documentElement;
-    html.classList.remove('showModal');
-});
-
-//Overlay
 closeOverlayModal.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.remove('showModal');
 })
 
+//Modal Sign up
+const openModalSign = document.getElementById('jsOpenModalSign');
+const closeModalSign = document.getElementById('jsCloseSign');
+const closeOverlayModalSign = document.getElementById('jsOverlaySign');
+
+openModalSign.addEventListener('click', (event) => {
+    event.preventDefault();
+    let html = document.documentElement;
+    html.classList.add('showModalSign');
+})
+
+closeModalSign.addEventListener('click', () => {
+    let html = document.documentElement;
+    html.classList.remove('showModalSign');
+});
+
 closeOverlayModalSign.addEventListener('click', () => {
     let html = document.documentElement;
-    html.classList.remove('showModal');
+    html.classList.remove('showModalSign');
+})
+
+
+//Modal Sign Mobile
+const openModalSignMobile = document.getElementById('jsOpenModalSignMobile');
+
+openModalSignMobile.addEventListener('click', (event) => {
+    event.preventDefault();
+    let html = document.documentElement;
+    html.classList.add('showModalSign');
+})
+
+
+
+//Modal Log in Mobile
+const openModalMobile = document.getElementById('jsOpenModalMobile');
+
+openModalMobile.addEventListener('click', (event) => {
+    event.preventDefault();
+    let html = document.documentElement;
+    html.classList.add('showModal');
 })
