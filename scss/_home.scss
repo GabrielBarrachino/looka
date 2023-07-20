@@ -710,3 +710,362 @@ footer{
         }
     }
 }
+
+
+.showModal{
+    .modalLogin{
+        opacity: 1;
+        pointer-events: all;
+        .modalContent{
+            transform: translateY(0px);
+        }
+    }
+    .modalSign{
+        opacity: 1;
+        pointer-events: all;
+        .modalContent{
+            transform: translateY(0px);
+        }
+    }
+}
+
+.modalLogin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2023;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s;
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+    .modalContent{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 50rem;
+        height: 60rem;
+        padding: 4rem;
+        background-color: #fff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateY(50px);
+        transition: transform .4s;
+        .close{
+            position: absolute;
+            top: 2rem;
+            right: 3rem;
+            background: transparent;
+            font-size: 4rem;
+            cursor: pointer;
+        }
+        .topContent{
+            .text{
+                h3{
+                    text-align: center;
+                    color: #090b17;
+                    font-size: 3rem;
+                }
+            }
+            .midiaSocial{
+                display: flex;
+                align-items: center;
+                gap: 4rem;
+                margin-top: 2rem;
+                margin-bottom: 4rem;
+                .linkContent{
+                    cursor: pointer;
+                    padding: 1.5rem;
+                    border-radius: 8px;
+                    transition: all .4s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    &.boxTwitter{
+                        background-color: #8ac2ff;
+                    }
+                    &.boxFacebook{
+                        background-color: #2456a2;
+                    }
+                    &.boxGoogle{
+                        background-color: #dd4b39;
+                    }
+                    a{
+                        font-size: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            .orContent{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 3rem 2rem 3rem 2rem;
+                text-align: center;
+                span{
+                    color: #676e8b;
+                    font-size: 1.7rem;
+                    font-weight: 400;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: 60%;
+                        width: 70%;
+                        height: .8px;
+                        background-color: #676e8b85;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 60%;
+                        width: 70%;
+                        height: .8px;
+                        background-color: #676e8b85;
+                    }
+                }
+            }         
+        }
+        .bottomContent{
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+            input{
+                width: 100%;
+                padding: 2rem;
+                outline: none;
+                border: 1px solid #83adec5e;
+                border-radius: 8px;
+                font-size: 1.8rem;
+                transition: all .4s;
+            }
+            input:focus{
+                border-color: #5340ff;
+            }
+            button{
+                cursor: pointer;
+                background-color: #5340ff;
+                color: #fff;
+                width: 100%;
+                padding: 2rem;
+                border-radius: 8px;
+                font-size: 1.8rem;
+                transition: all .4s;
+                &:hover{
+                    transform: scale(1.05);
+                    background-color: #1800f3;
+                }
+            }
+            .password{
+                margin-top: -1rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 2rem;
+                font-size: 1.6rem;
+                .passwordUm{
+                    color: #5340ff;
+                }
+                .passwordDois{
+                    color: #090b17;
+                }
+            }
+        }
+    }
+}
+
+.modalSign{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2023;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s;
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+    .modalContent{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 60rem;
+        height: 70rem;
+        padding: 4rem;
+        background-color: #fff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateY(50px);
+        transition: transform .4s;
+        .close{
+            position: absolute;
+            top: 2rem;
+            right: 3rem;
+            background: transparent;
+            font-size: 4rem;
+            cursor: pointer;
+        }
+        .topContent{
+            .text{
+                h3{
+                    text-align: center;
+                    color: #090b17;
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                    text-align: center;
+                    color: #676e8b;
+                    margin-top: .8rem;
+                }
+            }
+            .midiaSocial{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+                margin-top: 2rem;
+                margin-bottom: 4rem;
+                .linkContent{
+                    cursor: pointer;
+                    padding: 1.5rem;
+                    border-radius: 8px;
+                    transition: all .4s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    &.boxTwitter{
+                        background-color: #8ac2ff;
+                    }
+                    &.boxFacebook{
+                        background-color: #2456a2;
+                    }
+                    &.boxGoogle{
+                        background-color: #dd4b39;
+                    }
+                    a{
+                        font-size: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            .orContent{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 3rem 2rem 3rem 2rem;
+                text-align: center;
+                span{
+                    color: #676e8b;
+                    font-size: 1.7rem;
+                    font-weight: 400;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: 60%;
+                        width: 50%;
+                        height: .8px;
+                        background-color: #676e8b85;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 60%;
+                        width: 50%;
+                        height: .8px;
+                        background-color: #676e8b85;
+                    }
+                }
+            }         
+        }
+        .bottomContent{
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+            input{
+                width: 100%;
+                padding: 2rem;
+                outline: none;
+                border: 1px solid #83adec5e;
+                border-radius: 8px;
+                font-size: 1.8rem;
+                transition: all .4s;
+            }
+            input:focus{
+                border-color: #5340ff;
+            }
+            button{
+                cursor: pointer;
+                background-color: #5340ff;
+                color: #fff;
+                width: 100%;
+                padding: 2rem;
+                border-radius: 8px;
+                font-size: 1.8rem;
+                transition: all .4s;
+                &:hover{
+                    transform: scale(1.05);
+                    background-color: #1800f3;
+                }
+            }
+            .password{
+                margin-top: -1rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 2rem;
+                font-size: 1.6rem;
+                .passwordUm{
+                    color: #5340ff;
+                }
+                .passwordDois{
+                    color: #090b17;
+                }
+            }
+        }
+    }
+}
