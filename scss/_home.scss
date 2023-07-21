@@ -603,7 +603,6 @@
 }
 
 footer{
-    margin-top: 12rem;
     margin-bottom: 7rem;
     .container{
         max-width: 154rem;
@@ -674,7 +673,6 @@ footer{
     }
     @include responsivo(900px){
         .container{
-            margin: 2rem;
             .allLinks{
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 8rem 0;

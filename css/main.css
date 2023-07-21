@@ -976,7 +976,6 @@ header .containerHeader .loginContent .btnMobile {
 }
 
 footer {
-  margin-top: 12rem;
   margin-bottom: 7rem;
 }
 footer .container {
@@ -1039,9 +1038,6 @@ footer .container .copyRight .links a:hover {
   color: #5340ff;
 }
 @media (max-width: 900px) {
-  footer .container {
-    margin: 2rem;
-  }
   footer .container .allLinks {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 8rem 0;
